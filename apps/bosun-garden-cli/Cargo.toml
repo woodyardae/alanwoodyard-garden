@@ -1,0 +1,20 @@
+[package]
+name = "bosun-garden-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Command-line publisher for Bosun Garden tenant sites"
+
+[[bin]]
+name = "bosun-garden"
+path = "src/main.rs"
+
+[dependencies]
+bosun-garden-compiler.workspace = true
+clap.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true
